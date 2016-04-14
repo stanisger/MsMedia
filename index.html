@@ -1,21 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Ms Media</title>
-	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MS Media</title>
+	<!-- links -->
 	<link rel="stylesheet" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 </head>
 <body>
-
-<p>hola</p>
-
-
-
-
-
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+	<header>
+      <nav>
+	    <div class="nav-wrapper">
+	      <a href="#" class="brand-logo">
+	        <img src="assets/images/logo.png" alt="ms media">
+	      </a>
+	      <ul id="nav-mobile" class="right hide-on-med-and-down">
+	        <li> 
+	            <i class="material-icons">location_on</i>
+	            <a href="ubicaciones.html">Ubicaciónes</a>
+	         </li>
+	         <li> 
+	             <i class="material-icons">view_list</i>
+	            <a href="campanas.html">MÁS CAMPAÑAS</a>
+	         </li>
+	         <li> 
+	             <i class="material-icons">call</i>
+	            <a href="contacto.html">CONTACTO</a>
+	         </li>
+	      </ul>
+	    </div>
+      </nav>
+       <nav>
+	    <div class="nav-wrapper">
+	      <div class="col s9">
+	        <a href="#!" class="breadcrumb">MAPA DE UBICACIONES</a>
+	      </div>
+	      <div class="col s3">
+	         <a href="#!" class="collection-item">
+	          <i class="material-icons">star_rate</i>
+	           Guardados<span class="badge">1</span></a>
+	      </div>
+	    </div>
+	  </nav>       
+	</header>
+	<main>
+	  <ul id="nav-mobile" class="side-nav fixed">
+		<h3>UBICACIÓN Y NSE</h3>
+		 <li class="input-field col s12">
+		    <select>
+		      <option value="" disabled selected>Estado</option>
+		      <option value="1">Aguascalientes</option>
+		    </select>
+		  </li>
+		  <li class="input-field col s12">
+		    <select>
+		      <option value="" disabled selected>Ciudad</option>
+		      <option value="1">Aguascalientes</option>
+		    </select>
+		  </li>
+		  <li class="input-field col s12">
+		    <select>
+		      <option value="" disabled selected>Municipio</option>
+		      <option value="1">CDMX</option>
+		    </select>
+		  </li>
+		  <li class="input-field col s12">
+		    <select>
+		      <option value="" disabled selected>NSE</option>
+		      <option value="1">CDMX</option>
+		    </select>
+		  </li>
+		  <!-- Modal Trigger -->
+		  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">
+		     ESTABLECIMIENTOS CERCANOS
+		      <i class="material-icons">library_add</i>
+		   </a>
+		  <!-- Modal Structure -->
+		  <div id="modal1" class="modal bottom-sheet">
+		    <div class="modal-content">
+		      <h4>Modal Header</h4>
+		      <p>A bunch of text</p>
+		    </div>
+		    <div class="modal-footer">
+		      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+		    </div>
+		  </div>
+      </ul>
+      <ul>
+      	<iframe src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15002240.78767997!2d-111.57986578351806!3d23.36445824719479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84043a3b88685353%3A0xed64b4be6b099811!2zTcOpeGljbw!5e0!3m2!1ses!2smx!4v1461342431917" width="100%" height="100vh" frameborder="0" style="border:0" allowfullscreen></iframe>" frameborder="0"></iframe>
+      </ul>
+	</main>
+	<footer>
+		<div class="container">
+			<ul>
+				<li><a href="ubicacion.html">Ubicaciones</a></li> 
+				<li><a href="campanas.html">Mis Campañas</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+				<li><a href="privacidad.html">Política de Privacidad y Condiciones</a></li>
+			</ul>
+			<ul>
+				<li><a href="mailto:info@msmedia.com.mx">info@msmedia.com.mx •</a></li>
+				<li>Tels: (55) 3067-4103 y (55) 4606-1234</li>
+				<li> <a href="#" target="_blank"><i class=""></i></a></li>
+				<li> <a href="#" target="_blank"><i class=""></i></a></li>
+			</ul>
+		</div>
+	</footer>	
 </body>
 </html>
