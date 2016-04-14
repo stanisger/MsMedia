@@ -17,6 +17,34 @@ p {
 
 .second-nav {
 	background-color:black;
+
+	i.material-icons{
+		display: inline-block;
+		width: 30px;
+		font-size: 19px;
+	}
+
+	span{
+		padding:5px 10px;
+		color:white;
+		background-color:$red;
+		margin-left: 10px;
+	}
+}
+
+.second-nav{
+
+	.nav-wrapper {
+		
+		.row{
+
+			div:nth-child(1) a{
+				color:red;
+				text-transform:uppercase;
+			
+			}
+	  	}
+	}		
 }
 
 .first-nav{
@@ -32,7 +60,7 @@ p {
 	}
 
 	.nav-wrapper {
-		i{
+		i { 
 		height: 35px;
    		text-align: center;
     	line-height: 64px;
