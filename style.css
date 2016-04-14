@@ -1,3 +1,188 @@
+body {
+  font-family: 'Titillium Web', sans-serif !important; }
+
+footer {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+  footer ul li {
+    display: inline-block;
+    color: #ccc;
+    padding: 0 10px; }
+    footer ul li a {
+      color: #ccc;
+      transition: color .3s; }
+      footer ul li a:hover {
+        color: #eb1f26 !important; }
+
+.contenido {
+  z-index: -1;
+  position: relative; }
+
+.lateral {
+  top: 142px !important; }
+
+.mapa {
+  padding-left: 280px; }
+
+.second-nav {
+  background-color: black; }
+  .second-nav i.material-icons {
+    display: inline-block;
+    width: 30px;
+    font-size: 19px;
+    vertical-align: bottom; }
+  .second-nav span {
+    padding: 0px 10px 0px 8px;
+    border-radius: 5px;
+    color: white;
+    background-color: #eb1f26;
+    margin-left: 10px; }
+
+.second-nav .nav-wrapper .row div:nth-child(1) a {
+  color: red;
+  text-transform: uppercase;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+  font-size: 18px; }
+.second-nav .nav-wrapper .row h2 {
+  color: #eb1f26;
+  text-transform: uppercase;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 12px; }
+.second-nav .nav-wrapper .row .guardados {
+  text-align: right; }
+  .second-nav .nav-wrapper .row .guardados a {
+    text-decoration: underline; }
+
+.first-nav {
+  height: 110px;
+  color: #828282; }
+  .first-nav a {
+    color: #828282;
+    width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px; }
+  .first-nav .nav-wrapper i {
+    height: 35px;
+    text-align: center;
+    line-height: 64px; }
+
+.brand-logo {
+  text-align: left !important; }
+  .brand-logo img {
+    padding-top: 10px; }
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./fonts/icon/Flaticon.eot");
+  src: url("./fonts/icon/Flaticon.eot?#iefix") format("embedded-opentype"), url("./fonts/icon/Flaticon.woff") format("woff"), url("./fonts/icon/Flaticon.ttf") format("truetype"), url("./fonts/icon/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./fonts/icon/Flaticon.svg#Flaticon") format("svg"); } }
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-size: 20px;
+  font-style: lighter; }
+
+.flaticon-arrow:before {
+  content: "\f100"; }
+
+.flaticon-arrows:before {
+  content: "\f101"; }
+
+.flaticon-arrows-1:before {
+  content: "\f102"; }
+
+.flaticon-black:before {
+  content: "\f103"; }
+
+.flaticon-business:before {
+  content: "\f104"; }
+
+.flaticon-business-1:before {
+  content: "\f105"; }
+
+.flaticon-close:before {
+  content: "\f106"; }
+
+.flaticon-delete:before {
+  content: "\f107"; }
+
+.flaticon-drink:before {
+  content: "\f108"; }
+
+.flaticon-folder:before {
+  content: "\f109"; }
+
+.flaticon-food:before {
+  content: "\f10a"; }
+
+.flaticon-hat:before {
+  content: "\f10b"; }
+
+.flaticon-icon-128:before {
+  content: "\f10c"; }
+
+.flaticon-interface:before {
+  content: "\f10d"; }
+
+.flaticon-location:before {
+  content: "\f10e"; }
+
+.flaticon-man:before {
+  content: "\f10f"; }
+
+.flaticon-mark:before {
+  content: "\f110"; }
+
+.flaticon-medical:before {
+  content: "\f111"; }
+
+.flaticon-medical-1:before {
+  content: "\f112"; }
+
+.flaticon-party:before {
+  content: "\f113"; }
+
+.flaticon-people:before {
+  content: "\f114"; }
+
+.flaticon-people-1:before {
+  content: "\f115"; }
+
+.flaticon-people-2:before {
+  content: "\f116"; }
+
+.flaticon-search:before {
+  content: "\f117"; }
+
+.flaticon-signs:before {
+  content: "\f118"; }
+
+.flaticon-signs-1:before {
+  content: "\f119"; }
+
+.flaticon-social:before {
+  content: "\f11a"; }
+
+.flaticon-square:before {
+  content: "\f11b"; }
+
+.flaticon-talk:before {
+  content: "\f11c"; }
+
+.flaticon-technology:before {
+  content: "\f11d"; }
+
 /*!
  * Materialize v0.97.6 (http://materializecss.com)
  * Copyright 2014-2015 Materialize
@@ -6664,8 +6849,23 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
-p {
-  color: red; }
+body {
+  font-family: 'Titillium Web', sans-serif !important; }
+
+footer {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+  footer ul li {
+    display: inline-block;
+    color: #ccc;
+    padding: 0 10px; }
+    footer ul li a {
+      color: #ccc;
+      transition: color .3s; }
+      footer ul li a:hover {
+        color: #eb1f26 !important; }
 
 .contenido {
   z-index: -1;
@@ -6682,16 +6882,32 @@ p {
   .second-nav i.material-icons {
     display: inline-block;
     width: 30px;
-    font-size: 19px; }
+    font-size: 19px;
+    vertical-align: bottom; }
   .second-nav span {
-    padding: 5px 10px;
+    padding: 0px 10px 0px 8px;
+    border-radius: 5px;
     color: white;
     background-color: #eb1f26;
     margin-left: 10px; }
 
 .second-nav .nav-wrapper .row div:nth-child(1) a {
   color: red;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+  font-size: 18px; }
+.second-nav .nav-wrapper .row h2 {
+  color: #eb1f26;
+  text-transform: uppercase;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 12px; }
+.second-nav .nav-wrapper .row .guardados {
+  text-align: right; }
+  .second-nav .nav-wrapper .row .guardados a {
+    text-decoration: underline; }
 
 .first-nav {
   height: 110px;
