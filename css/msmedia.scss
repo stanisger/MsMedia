@@ -9,6 +9,25 @@ footer{
 	position: fixed;
     bottom: 0;
     width: 100%;
+    text-align: right;
+
+	a{
+
+		color:$lightgrey;
+		transition: color .3s;
+	
+		&:hover{
+		color:$red !important;
+		}
+
+
+	    i{
+			font-style: normal;
+			-webkit-font-smoothing: antialiased;
+			font-size: 20px;
+    		line-height: 15px;
+		}
+	}
 
 	ul{
 
@@ -22,27 +41,16 @@ footer{
 				transition: color .3s;
 			
 				&:hover{
-					color:$red !important;
+				color:$red !important;
 				}
 
 			}
+
 		}
 	}
 
 }
 
-.contenido{
-	z-index: -1;
-    position: relative;
-}
-
-.lateral {
-	top:142px !important;
-}
-
-.mapa{
-	padding-left:280px;
-}
 
 .second-nav {
 	background-color:black;
@@ -115,9 +123,7 @@ footer{
    		text-align: center;
     	line-height: 64px;
 		}
-
 	}
-
 }
 
 .brand-logo {
@@ -128,7 +134,130 @@ footer{
 		padding-top:10px;
 	}
 }
+.contenido{
+	height: 80vh;
+	@include flexFlow ;
+	ul{
+		@include cero;
+	}
+	// nth-child1
+	ul:nth-child(1){
+		width: 20%;
+		background-color: $grayLight;
+		padding: 24px 36px;  
+		h3{
+          color: white;
+          font-size: 14px;
+
+		}
+		li.input-field{
+			background: $red;
+			border-radius: 5px;
+		}	
+		.modal{
+			width: 19.8%;
+		}
+	}
+	// nth-child2
+	ul:nth-child(2){
+		width: 80%;
+		background-color: salmon;
+	}
+}
+
+.contenido-contacto{
+	padding-bottom:100px;
+}
+
+.img-header{
+	height:180px;
+
+	img{
+		width: 100%;
+	}
+}
+
+.contacto {
+	margin-top: 50px;
 
 
+		.row{
+		
+			img{
+				border: 1px solid $lightgrey;
+				margin-top: 10px;
+			}
+
+			h3{
+				color: #eb1f26;
+			    font-family: 'Titillium Web', sans-serif;
+			    font-weight: 700;
+			    font-size: 22px;
+			    line-height: 12px;
+			    margin-bottom: 3px;
+			    margin-top: 30px;
+
+			}
+
+			span{
+				color: $red;
+			}
+			
+			p:nth-child(3){
+				text-transform:uppercase; 
+			}
+			
+			p:nth-child(1){
+				padding:15px;
+				background-color:#444545;
+				color:$lightgrey;
+				text-align: center;
+			
+				span{
+					font-size: 30px;
+					color:$lightgrey !important;
+				}
+
+			}
+
+			.s10{
+				border-bottom: 1px solid $lightgrey;
+				margin-bottom: 10px;
+			}
+		}
+}
+
+
+.personal {
+	
+	.row {
+
+		.col {
+
+			h3{
+				padding:10px;
+				background-color: $red;
+				color: white;
+				font-size: 19px;
+			}
+
+			h4{
+				font-size: 20px;
+				text-transform: uppercase;
+				color:red;
+				margin: 0;
+			}
+
+			a{
+				font-size: 15px;
+				    color: rgba(0, 0, 0, 0.87);
+				margin-top: 3px;
+				text-decoration: underline;
+			}
+
+		}
+
+	}
+}
 
 

@@ -5266,7 +5266,7 @@ a.waves-effect .waves-ripple {
   right: 0;
   height: 125%;
   width: 100%;
-  background: #000;
+  background: transparent;
   display: none;
   will-change: opacity;
 }
@@ -6348,7 +6348,7 @@ select {
   cursor: pointer;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #9e9e9e;
+  border-radius: 20px;
   outline: none;
   height: 3rem;
   line-height: 3rem;
@@ -6357,14 +6357,21 @@ select {
   margin: 0 0 15px 0;
   padding: 0;
   display: block;
+  color: white;
+  padding-left: 9px;
 }
 
 .select-wrapper span.caret {
-  color: initial;
+  color: red;
+  background: white;
   position: absolute;
   right: 0;
-  top: 16px;
-  font-size: 10px;
+  top: 0;
+  height: 100%;
+  width: 60px;
+  border-radius: 4px;
+  font-size: 15px;
+  padding: 14px 23px;
 }
 
 .select-wrapper span.caret.disabled {
