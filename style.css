@@ -3275,14 +3275,14 @@ input[type=range] + .thumb {
   .row .col.push-l12 {
     left: 100%; } }
 nav {
-  color: #fff;
-  background-color: #ee6e73;
+  color: #ccc;
+  background-color: white;
   width: 100%;
   height: 56px;
   line-height: 56px; }
 
 nav a {
-  color: #fff; }
+  color: #ccc; }
 
 nav i,
 nav [class^="mdi-"], nav [class*="mdi-"],
@@ -3358,7 +3358,7 @@ nav ul li.active {
 nav ul a {
   transition: background-color .3s;
   font-size: 1rem;
-  color: #fff;
+  color: #ccc;
   display: inline-block;
   padding: 0 15px;
   cursor: pointer; }
@@ -3369,7 +3369,8 @@ nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul 
   margin-right: 15px; }
 
 nav ul a:hover {
-  background-color: rgba(0, 0, 0, 0.1); }
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white; }
 
 nav ul.left {
   float: left; }
@@ -6664,6 +6665,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 p {
   color: red; }
 
+<<<<<<< HEAD
 @font-face {
   font-family: "Flaticon";
   src: url("./fonts/icon/Flaticon.eot");
@@ -6769,5 +6771,38 @@ p {
 
 .flaticon-technology:before {
   content: "\f11d"; }
+
+.contenido {
+  z-index: -1;
+  position: relative; }
+
+.lateral {
+  top: 142px !important; }
+
+.mapa {
+  padding-left: 280px; }
+
+.second-nav {
+  background-color: black; }
+
+.first-nav {
+  height: 110px;
+  color: #828282; }
+  .first-nav a {
+    color: #828282;
+    width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px; }
+  .first-nav .nav-wrapper i {
+    height: 35px;
+    text-align: center;
+    line-height: 64px; }
+
+.brand-logo {
+  text-align: left !important; }
+  .brand-logo img {
+    padding-top: 10px; }
+
 
 /*# sourceMappingURL=style.css.map */

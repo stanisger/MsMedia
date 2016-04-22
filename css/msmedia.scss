@@ -1,3 +1,55 @@
 p {
 	color:red;
 }
+
+.contenido{
+	z-index: -1;
+    position: relative;
+}
+
+.lateral {
+	top:142px !important;
+}
+
+.mapa{
+	padding-left:280px;
+}
+
+.second-nav {
+	background-color:black;
+}
+
+.first-nav{
+	height: 110px;
+	color:$grey;
+
+	a{
+		color:$grey;
+		width: 200px;
+		text-align: center;
+		text-transform: uppercase;
+		padding-top: 10px;
+	}
+
+	.nav-wrapper {
+		i{
+		height: 35px;
+   		text-align: center;
+    	line-height: 64px;
+		}
+
+	}
+
+}
+
+.brand-logo {
+
+	text-align:left !important;
+	
+	img{
+		padding-top:10px;
+	}
+}
+
+
+
