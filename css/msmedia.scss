@@ -2,19 +2,6 @@ p {
 	color:red;
 }
 
-.contenido{
-	z-index: -1;
-    position: relative;
-}
-
-.lateral {
-	top:142px !important;
-}
-
-.mapa{
-	padding-left:280px;
-}
-
 .second-nav {
 	background-color:black;
 }
@@ -37,9 +24,7 @@ p {
    		text-align: center;
     	line-height: 64px;
 		}
-
 	}
-
 }
 
 .brand-logo {
@@ -50,6 +35,34 @@ p {
 		padding-top:10px;
 	}
 }
+.contenido{
+	height: 80vh;
+	@include flexFlow ;
+	ul{
+		@include cero;
+	}
+	// nth-child1
+	ul:nth-child(1){
+		width: 20%;
+		background-color: $grayLight;
+		padding: 24px 36px;  
+		h3{
+          color: white;
+          font-size: 14px;
 
-
+		}
+		li.input-field{
+			background: $red;
+			border-radius: 5px;
+		}	
+		.modal{
+			width: 19.8%;
+		}
+	}
+	// nth-child2
+	ul:nth-child(2){
+		width: 80%;
+		background-color: salmon;
+	}
+}
 

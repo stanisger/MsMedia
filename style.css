@@ -1,3 +1,162 @@
+p {
+  color: red; }
+
+.second-nav {
+  background-color: black; }
+
+.first-nav {
+  height: 110px;
+  color: #828282; }
+  .first-nav a {
+    color: #828282;
+    width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px; }
+  .first-nav .nav-wrapper i {
+    height: 35px;
+    text-align: center;
+    line-height: 64px; }
+
+.brand-logo {
+  text-align: left !important; }
+  .brand-logo img {
+    padding-top: 10px; }
+
+.contenido {
+  height: 80vh;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .contenido ul {
+    padding: 0;
+    margin: 0; }
+  .contenido ul:nth-child(1) {
+    width: 20%;
+    background-color: #444545;
+    padding: 24px 36px; }
+    .contenido ul:nth-child(1) h3 {
+      color: white;
+      font-size: 14px; }
+    .contenido ul:nth-child(1) li.input-field {
+      background: #de1e1e;
+      border-radius: 5px; }
+    .contenido ul:nth-child(1) .modal {
+      width: 19.8%; }
+  .contenido ul:nth-child(2) {
+    width: 80%;
+    background-color: salmon; }
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./	fonts/icon/Flaticon.eot");
+  src: url("./	fonts/icon/Flaticon.eot?#iefix") format("embedded-opentype"), url("./	fonts/icon/Flaticon.woff") format("woff"), url("./	fonts/icon/Flaticon.ttf") format("truetype"), url("./	fonts/icon/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./	fonts/icon/Flaticon.svg#Flaticon") format("svg"); } }
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-size: 20px;
+  font-style: lighter; }
+
+.flaticon-arrow:before {
+  content: "\f100"; }
+
+.flaticon-arrows:before {
+  content: "\f101"; }
+
+.flaticon-arrows-1:before {
+  content: "\f102"; }
+
+.flaticon-black:before {
+  content: "\f103"; }
+
+.flaticon-business:before {
+  content: "\f104"; }
+
+.flaticon-business-1:before {
+  content: "\f105"; }
+
+.flaticon-close:before {
+  content: "\f106"; }
+
+.flaticon-delete:before {
+  content: "\f107"; }
+
+.flaticon-drink:before {
+  content: "\f108"; }
+
+.flaticon-folder:before {
+  content: "\f109"; }
+
+.flaticon-food:before {
+  content: "\f10a"; }
+
+.flaticon-hat:before {
+  content: "\f10b"; }
+
+.flaticon-icon-128:before {
+  content: "\f10c"; }
+
+.flaticon-interface:before {
+  content: "\f10d"; }
+
+.flaticon-location:before {
+  content: "\f10e"; }
+
+.flaticon-man:before {
+  content: "\f10f"; }
+
+.flaticon-mark:before {
+  content: "\f110"; }
+
+.flaticon-medical:before {
+  content: "\f111"; }
+
+.flaticon-medical-1:before {
+  content: "\f112"; }
+
+.flaticon-party:before {
+  content: "\f113"; }
+
+.flaticon-people:before {
+  content: "\f114"; }
+
+.flaticon-people-1:before {
+  content: "\f115"; }
+
+.flaticon-people-2:before {
+  content: "\f116"; }
+
+.flaticon-search:before {
+  content: "\f117"; }
+
+.flaticon-signs:before {
+  content: "\f118"; }
+
+.flaticon-signs-1:before {
+  content: "\f119"; }
+
+.flaticon-social:before {
+  content: "\f11a"; }
+
+.flaticon-square:before {
+  content: "\f11b"; }
+
+.flaticon-talk:before {
+  content: "\f11c"; }
+
+.flaticon-technology:before {
+  content: "\f11d"; }
+
 /*!
  * Materialize v0.97.6 (http://materializecss.com)
  * Copyright 2014-2015 Materialize
@@ -4205,7 +4364,7 @@ a.waves-effect .waves-ripple {
   right: 0;
   height: 125%;
   width: 100%;
-  background: #000;
+  background: transparent;
   display: none;
   will-change: opacity; }
 
@@ -5159,7 +5318,7 @@ select {
   cursor: pointer;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #9e9e9e;
+  border-radius: 20px;
   outline: none;
   height: 3rem;
   line-height: 3rem;
@@ -5167,14 +5326,21 @@ select {
   font-size: 1rem;
   margin: 0 0 15px 0;
   padding: 0;
-  display: block; }
+  display: block;
+  color: white;
+  padding-left: 9px; }
 
 .select-wrapper span.caret {
-  color: initial;
+  color: red;
+  background: white;
   position: absolute;
   right: 0;
-  top: 16px;
-  font-size: 10px; }
+  top: 0;
+  height: 100%;
+  width: 60px;
+  border-radius: 4px;
+  font-size: 15px;
+  padding: 14px 23px; }
 
 .select-wrapper span.caret.disabled {
   color: rgba(0, 0, 0, 0.26); }
@@ -6665,123 +6831,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 p {
   color: red; }
 
-<<<<<<< HEAD
-@font-face {
-  font-family: "Flaticon";
-  src: url("./fonts/icon/Flaticon.eot");
-  src: url("./fonts/icon/Flaticon.eot?#iefix") format("embedded-opentype"), url("./fonts/icon/Flaticon.woff") format("woff"), url("./fonts/icon/Flaticon.ttf") format("truetype"), url("./fonts/icon/Flaticon.svg#Flaticon") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: "Flaticon";
-    src: url("./fonts/icon/Flaticon.svg#Flaticon") format("svg"); } }
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-  font-family: Flaticon;
-  font-size: 20px;
-  font-style: lighter; }
-
-.flaticon-arrow:before {
-  content: "\f100"; }
-
-.flaticon-arrows:before {
-  content: "\f101"; }
-
-.flaticon-arrows-1:before {
-  content: "\f102"; }
-
-.flaticon-black:before {
-  content: "\f103"; }
-
-.flaticon-business:before {
-  content: "\f104"; }
-
-.flaticon-business-1:before {
-  content: "\f105"; }
-
-.flaticon-close:before {
-  content: "\f106"; }
-
-.flaticon-delete:before {
-  content: "\f107"; }
-
-.flaticon-drink:before {
-  content: "\f108"; }
-
-.flaticon-folder:before {
-  content: "\f109"; }
-
-.flaticon-food:before {
-  content: "\f10a"; }
-
-.flaticon-hat:before {
-  content: "\f10b"; }
-
-.flaticon-icon-128:before {
-  content: "\f10c"; }
-
-.flaticon-interface:before {
-  content: "\f10d"; }
-
-.flaticon-location:before {
-  content: "\f10e"; }
-
-.flaticon-man:before {
-  content: "\f10f"; }
-
-.flaticon-mark:before {
-  content: "\f110"; }
-
-.flaticon-medical:before {
-  content: "\f111"; }
-
-.flaticon-medical-1:before {
-  content: "\f112"; }
-
-.flaticon-party:before {
-  content: "\f113"; }
-
-.flaticon-people:before {
-  content: "\f114"; }
-
-.flaticon-people-1:before {
-  content: "\f115"; }
-
-.flaticon-people-2:before {
-  content: "\f116"; }
-
-.flaticon-search:before {
-  content: "\f117"; }
-
-.flaticon-signs:before {
-  content: "\f118"; }
-
-.flaticon-signs-1:before {
-  content: "\f119"; }
-
-.flaticon-social:before {
-  content: "\f11a"; }
-
-.flaticon-square:before {
-  content: "\f11b"; }
-
-.flaticon-talk:before {
-  content: "\f11c"; }
-
-.flaticon-technology:before {
-  content: "\f11d"; }
-
-.contenido {
-  z-index: -1;
-  position: relative; }
-
-.lateral {
-  top: 142px !important; }
-
-.mapa {
-  padding-left: 280px; }
-
 .second-nav {
   background-color: black; }
 
@@ -6804,5 +6853,32 @@ p {
   .brand-logo img {
     padding-top: 10px; }
 
+.contenido {
+  height: 80vh;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .contenido ul {
+    padding: 0;
+    margin: 0; }
+  .contenido ul:nth-child(1) {
+    width: 20%;
+    background-color: #444545;
+    padding: 24px 36px; }
+    .contenido ul:nth-child(1) h3 {
+      color: white;
+      font-size: 14px; }
+    .contenido ul:nth-child(1) li.input-field {
+      background: #de1e1e;
+      border-radius: 5px; }
+    .contenido ul:nth-child(1) .modal {
+      width: 19.8%; }
+  .contenido ul:nth-child(2) {
+    width: 80%;
+    background-color: salmon; }
 
 /*# sourceMappingURL=style.css.map */
