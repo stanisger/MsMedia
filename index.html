@@ -7,17 +7,22 @@
 	<!-- links -->
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700,600italic,600,700italic,900,400italic' rel='stylesheet' type='text/css'>
+
 	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 </head>
 <body>
 	<header>
+         
       <nav class="first-nav">
 	    <div class="nav-wrapper container">
 	      <a href="#" class="brand-logo">
 	        <img src="assets/images/logo.png" alt="ms media">
 	      </a>
-	      <ul id="nav-mobile" class="right ">
+
+	      <ul class="right hide-on-med-and-down">
+
 	        <li> 
 	            <a href="ubicaciones.html"><i class="material-icons">location_on</i>
 	            Ubicaciones</a>
@@ -27,27 +32,34 @@
 	            MÁS CAMPAÑAS</a>
 	         </li>
 	         <li> 
-	             <a href="campanas.html"><i class="material-icons">call</i>
+	             <a href="campanas.html"><i class="material-icons">send</i>
 	            CONTACTO</a>
 	         </li>
+	      </ul>
+
+	      <ul class="side-nav" id="mobile-demo">
+	        <li><a href="sass.html">Sass</a></li>
+	        <li><a href="badges.html">Components</a></li>
+	        <li><a href="collapsible.html">Javascript</a></li>
+	        <li><a href="mobile.html">Mobile</a></li>
 	      </ul>
 	    </div>
       </nav>
 
-   <!--     <nav class="second-nav">
+       <nav class="second-nav">
 	    <div class="nav-wrapper container">
 		    <div class="row">	
 			      <div class="col s9">
-			        <a href="#!" class="breadcrumb">MAPA DE UBICACIONES</a>
+			        <h2>Mapa de ubicaciones</h2>
 			      </div>
-			      <div class="col s3">
-			         <a href="#!" class="collection-item">
-			          <i class="material-icons">star_rate</i>
-			           Guardados<span class="badge">1</span></a>
+			      <div class="col s3 guardados">
+			          <span class="material-icons">star_rate</span>
+			          <a href="#" class="collection-item">
+			           Guardados</a><span>1</span>
 			      </div>
 		    </div>
 		</div>
-	  </nav>  -->
+	  </nav> 
 
 	</header>
 	<main class="contenido ">
@@ -78,9 +90,9 @@
 		    </select>
 		  </li>
 		  <!-- Modal Trigger -->
-		  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">
+		  <a class="waves-effect waves-light  modal-trigger" href="#modal1">
 		     ESTABLECIMIENTOS CERCANOS
-		      <i class="material-icons">library_add</i>
+		      <i class="material-icons">add_circle</i>
 
 		   </a>
 		  <!-- Modal Structure -->
@@ -94,30 +106,40 @@
 		    </div>
 		  </div>
       </ul>
-      <ul class="mapa">
-      	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15002084.337996349!2d-111.55596176394198!3d23.365841313308945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84043a3b88685353%3A0xed64b4be6b099811!2zTcOpeGljbw!5e0!3m2!1ses-419!2smx!4v1460656400638" width="100%" height="750px" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <ul class="mapa" style="position: relative;">
+    
+      	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15002084.337996349!2d-111.55596176394198!3d23.365841313308945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84043a3b88685353%3A0xed64b4be6b099811!2zTcOpeGljbw!5e0!3m2!1ses-419!2smx!4v1460656400638"frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe>
       </ul>
 	</main>
-	<footer>
+	
+<!-- 	<footer>
 		<div class="container">
-			<ul>
-				<li><a href="ubicacion.html">Ubicaciones</a></li> 
+			<div class="row">
+			<ul class="col s7">
+				<li><a href="ubicacion.html">Ubicaciones</a></li>
+				<li>|</li> 
 				<li><a href="campanas.html">Mis Campañas</a></li>
+				<li>|</li> 
 				<li><a href="contacto.html">Contacto</a></li>
+				<li>|</li> 
 				<li><a href="privacidad.html">Política de Privacidad y Condiciones</a></li>
 			</ul>
-			<ul>
-				<li><a href="mailto:info@msmedia.com.mx">info@msmedia.com.mx •</a></li>
+			<ul class="col s5">
+				<li><a href="mailto:info@msmedia.com.mx">info@msmedia.com.mx</a></li>
+				<li>•</li>
 				<li>Tels: (55) 3067-4103 y (55) 4606-1234</li>
 				<li> <a href="#" target="_blank"><i class=""></i></a></li>
 				<li> <a href="#" target="_blank"><i class=""></i></a></li>
 			</ul>
+			</div>
 		</div>
-	</footer>	
+	</footer> -->	
+
 
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="assets/js/materialize.js"></script>
-      <script type="text/javascript" src="assets/js/main.js"></script>
+
+	<script type="text/javascript" src="assets/js/materialize.js"></script>
+	<script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -1,8 +1,64 @@
-p {
-  color: red; }
+body {
+  font-family: 'Titillium Web', sans-serif !important;
+  background: #000; }
+
+footer {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  padding-top: 20px; }
+  footer ul {
+    padding: 0;
+    margin: 0; }
+    footer ul li {
+      display: inline-block;
+      color: #ccc;
+      padding: 0 10px; }
+      footer ul li a {
+        color: #ccc;
+        transition: color .3s; }
+        footer ul li a:hover {
+          color: #eb1f26 !important; }
 
 .second-nav {
-  background-color: black; }
+  background-color: black;
+  height: 68px; }
+  .second-nav .nav-wrapper {
+    width: 60%; }
+    .second-nav .nav-wrapper .row i {
+      padding: 0;
+      margin: 0; }
+    .second-nav .nav-wrapper .row div:nth-child(1) a {
+      color: red;
+      text-transform: uppercase;
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: 700;
+      font-size: 18px; }
+    .second-nav .nav-wrapper .row h2 {
+      color: #eb1f26;
+      text-transform: uppercase;
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 12px;
+      margin: 23px 0 0; }
+    .second-nav .nav-wrapper .row .guardados {
+      text-align: right; }
+      .second-nav .nav-wrapper .row .guardados span:nth-child(1) {
+        display: inline-block;
+        width: 30px;
+        vertical-align: middle;
+        color: #eb1f26; }
+      .second-nav .nav-wrapper .row .guardados a {
+        text-decoration: underline; }
+      .second-nav .nav-wrapper .row .guardados span:nth-child(3) {
+        padding: 0px 10px 0px 8px;
+        border-radius: 5px;
+        color: white;
+        background-color: #eb1f26;
+        margin-left: 10px; }
 
 .first-nav {
   height: 110px;
@@ -17,6 +73,8 @@ p {
     height: 35px;
     text-align: center;
     line-height: 64px; }
+  .first-nav .container {
+    width: 60%; }
 
 .brand-logo {
   text-align: left !important; }
@@ -24,32 +82,50 @@ p {
     padding-top: 10px; }
 
 .contenido {
-  height: 80vh;
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  width: 100%;
+  min-height: 100vmax; }
   .contenido ul {
     padding: 0;
     margin: 0; }
   .contenido ul:nth-child(1) {
     width: 20%;
     background-color: #444545;
-    padding: 24px 36px; }
+    position: relative; }
     .contenido ul:nth-child(1) h3 {
       color: white;
-      font-size: 14px; }
+      font-size: 15px;
+      margin: 36px; }
     .contenido ul:nth-child(1) li.input-field {
-      background: #de1e1e;
-      border-radius: 5px; }
+      background: #eb1f26;
+      border-radius: 5px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto; }
     .contenido ul:nth-child(1) .modal {
-      width: 19.8%; }
+      width: 20%; }
+    .contenido ul:nth-child(1) > a {
+      border-top: 1px solid #999;
+      bottom: 0;
+      color: white;
+      height: 75px;
+      padding: 18px;
+      position: absolute;
+      text-align: center;
+      width: 100%; }
+      .contenido ul:nth-child(1) > a i {
+        color: #212121;
+        font-size: 32px;
+        margin-left: 5px;
+        vertical-align: middle; }
   .contenido ul:nth-child(2) {
-    width: 80%;
-    background-color: salmon; }
+    width: 80%; }
 
 @font-face {
   font-family: "Flaticon";
@@ -3520,7 +3596,8 @@ nav ul a {
   color: #ccc;
   display: inline-block;
   padding: 0 15px;
-  cursor: pointer; }
+  cursor: pointer;
+  border-top: 5px solid white; }
 
 nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
   margin-top: -2px;
@@ -3529,7 +3606,8 @@ nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul 
 
 nav ul a:hover {
   background-color: rgba(0, 0, 0, 0.9);
-  color: white; }
+  color: white;
+  border-top: 5px solid #eb1f26; }
 
 nav ul.left {
   float: left; }
@@ -5337,10 +5415,10 @@ select {
   right: 0;
   top: 0;
   height: 100%;
-  width: 60px;
+  width: 50px;
   border-radius: 4px;
   font-size: 15px;
-  padding: 14px 23px; }
+  padding: 14px 20px; }
 
 .select-wrapper span.caret.disabled {
   color: rgba(0, 0, 0, 0.26); }
@@ -6828,11 +6906,67 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
-p {
-  color: red; }
+body {
+  font-family: 'Titillium Web', sans-serif !important;
+  background: #000; }
+
+footer {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  padding-top: 20px; }
+  footer ul {
+    padding: 0;
+    margin: 0; }
+    footer ul li {
+      display: inline-block;
+      color: #ccc;
+      padding: 0 10px; }
+      footer ul li a {
+        color: #ccc;
+        transition: color .3s; }
+        footer ul li a:hover {
+          color: #eb1f26 !important; }
 
 .second-nav {
-  background-color: black; }
+  background-color: black;
+  height: 68px; }
+  .second-nav .nav-wrapper {
+    width: 60%; }
+    .second-nav .nav-wrapper .row i {
+      padding: 0;
+      margin: 0; }
+    .second-nav .nav-wrapper .row div:nth-child(1) a {
+      color: red;
+      text-transform: uppercase;
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: 700;
+      font-size: 18px; }
+    .second-nav .nav-wrapper .row h2 {
+      color: #eb1f26;
+      text-transform: uppercase;
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 12px;
+      margin: 23px 0 0; }
+    .second-nav .nav-wrapper .row .guardados {
+      text-align: right; }
+      .second-nav .nav-wrapper .row .guardados span:nth-child(1) {
+        display: inline-block;
+        width: 30px;
+        vertical-align: middle;
+        color: #eb1f26; }
+      .second-nav .nav-wrapper .row .guardados a {
+        text-decoration: underline; }
+      .second-nav .nav-wrapper .row .guardados span:nth-child(3) {
+        padding: 0px 10px 0px 8px;
+        border-radius: 5px;
+        color: white;
+        background-color: #eb1f26;
+        margin-left: 10px; }
 
 .first-nav {
   height: 110px;
@@ -6847,6 +6981,8 @@ p {
     height: 35px;
     text-align: center;
     line-height: 64px; }
+  .first-nav .container {
+    width: 60%; }
 
 .brand-logo {
   text-align: left !important; }
@@ -6854,31 +6990,49 @@ p {
     padding-top: 10px; }
 
 .contenido {
-  height: 80vh;
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  width: 100%;
+  min-height: 100vmax; }
   .contenido ul {
     padding: 0;
     margin: 0; }
   .contenido ul:nth-child(1) {
     width: 20%;
     background-color: #444545;
-    padding: 24px 36px; }
+    position: relative; }
     .contenido ul:nth-child(1) h3 {
       color: white;
-      font-size: 14px; }
+      font-size: 15px;
+      margin: 36px; }
     .contenido ul:nth-child(1) li.input-field {
-      background: #de1e1e;
-      border-radius: 5px; }
+      background: #eb1f26;
+      border-radius: 5px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto; }
     .contenido ul:nth-child(1) .modal {
-      width: 19.8%; }
+      width: 20%; }
+    .contenido ul:nth-child(1) > a {
+      border-top: 1px solid #999;
+      bottom: 0;
+      color: white;
+      height: 75px;
+      padding: 18px;
+      position: absolute;
+      text-align: center;
+      width: 100%; }
+      .contenido ul:nth-child(1) > a i {
+        color: #212121;
+        font-size: 32px;
+        margin-left: 5px;
+        vertical-align: middle; }
   .contenido ul:nth-child(2) {
-    width: 80%;
-    background-color: salmon; }
+    width: 80%; }
 
 /*# sourceMappingURL=style.css.map */

@@ -4190,6 +4190,7 @@ nav ul a {
   display: inline-block;
   padding: 0 15px;
   cursor: pointer;
+  border-top: 5px solid white;
 }
 
 nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
@@ -4201,6 +4202,7 @@ nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul 
 nav ul a:hover {
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
+  border-top: 5px solid $red;
 }
 
 nav ul.left {
@@ -6366,10 +6368,10 @@ select {
   right: 0;
   top: 0;
   height: 100%;
-  width: 60px;
+  width: 50px;
   border-radius: 4px;
   font-size: 15px;
-  padding: 14px 23px;
+  padding: 14px 20px;
 }
 
 .select-wrapper span.caret.disabled {
