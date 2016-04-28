@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MS Media</title>
+	<!-- links -->
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700,600italic,600,700italic,900,400italic' rel='stylesheet' type='text/css'>
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+	<header>
+          
+
+      <nav class="first-nav">
+	    <div class="nav-wrapper container">
+	      <a href="#" class="brand-logo">
+	        <img src="assets/images/logo.png" alt="ms media">
+	      </a>
+
+	       
+	      <ul class="right hide-on-med-and-down">
+	      
+	        <li> 
+	            <a href="ubicaciones.html"><i class="material-icons">location_on</i>
+	            Ubicaciones</a>
+	         </li>
+	         <li> 
+	             <a href="campanas.html"><i class="material-icons">view_list</i>
+	            MÁS CAMPAÑAS</a>
+	         </li>
+	         <li> 
+	             <a href="campanas.html"><i class="material-icons">send</i>
+	            CONTACTO</a>
+	         </li>
+	      </ul>
+
+	    </div>
+      </nav>
+
+       <nav class="second-nav">
+	    <div class="nav-wrapper container">
+		    <div class="row">	
+			      <div class="col s9">
+			        <h2>Mapa de ubicaciones</h2>
+			      </div>
+			      <div class="col s3 guardados">
+			          <i class="material-icons">star_rate</i>
+			          <a href="#" class="collection-item">
+			           Guardados</a><span>1</span>
+			      </div>
+		    </div>
+		</div>
+	  </nav>  
+
+	</header>
+	<main class="contenido campana">
+	  <ul>
+		<h3>UBICACIÓN Y NSE</h3>
+		 <li class="input-field col s12">
+		    <select>
+		      <option value="" disabled selected>Estado</option>
+		      <option value="1">Aguascalientes</option>
+		    </select>
+		  </li>
+		  <li class="input-field col s12">
+		    <select>
+		      <option value="" disabled selected>Ciudad</option>
+		      <option value="1">Aguascalientes</option>
+		    </select>
+		  </li>
+		  <li class="input-field col s12">
+		    <select>
+		      <option value="" disabled selected>Municipio</option>
+		      <option value="1">CDMX</option>
+		    </select>
+		  </li>
+		  <li class="input-field col s12">
+		    <select>
+		      <option value="" disabled selected>NSE</option>
+		      <option value="1">CDMX</option>
+		    </select>
+		  </li>
+		  <!-- Modal Trigger -->
+		  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">
+		     ESTABLECIMIENTOS CERCANOS
+		      <i class="material-icons">library_add</i>
+
+		   </a>
+		  <!-- Modal Structure -->
+		  <div id="modal1" class="modal bottom-sheet">
+		    <div class="modal-content">
+		      <h4>Modal Header</h4>
+		      <p>A bunch of text</p>
+		    </div>
+		    <div class="modal-footer">
+		      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+		    </div>
+		  </div>
+      </ul>
+      <ul class="tabla">
+      	<h2>Campaña Tecate GDL/MEX</h2>
+      	<table class="striped">
+        <thead>
+          <tr>
+              <th data-field="Imagen">Imagen</th>
+              <th data-field="Ubicacion">Ubicación</th>
+              <th data-field="Dimensiones">Dimensiones</th>
+              <th data-field="Población">Población</th>
+              <th data-field="NSE">NSE</th>
+              <th data-field="Promedio">Promedio edad</th>
+              <th data-field="id">%Hombres</th>
+              <th data-field="name">%Mujeres</th>
+              <th data-field="price"></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><img src="assets/images/c1.jpg" alt=""></td>
+            <td>Leona Vicario #401B Metepec / Estado de México</td>
+            <td>12m x 3.5m</td>
+            <td>350,000</td>
+            <td>C+</td>
+            <td>27 años</td>
+            <td>47%</td>
+            <td>53%</td>
+            <td><i class="flaticon-icon-128"></i></td>
+          </tr>
+          <tr>
+            <td><img src="assets/images/c2.png" alt=""></td>
+            <td>Av. Emiliano Zapata #33 Metepec / Estado de México</td>
+            <td>6m x 5m</td>
+            <td>180,000</td>
+            <td>C</td>
+            <td>21 años</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td><i class="flaticon-icon-128"></i></td>
+          </tr>
+          <tr>
+            <td><img src="assets/images/c3.png" alt=""></td>
+            <td>Av. Vallarta #345 Guadalajara / Jalisco</td>
+            <td>10m x 4m</td>
+            <td>163,000/td>
+            <td>C+</td>
+            <td>32 años</td>
+            <td>55%</td>
+            <td>45%</td>
+            <td><i class="flaticon-icon-128"></i></td>
+          </tr>
+          <tr>
+            <td><img src="assets/images/c4.png" alt=""></td>
+            <td>Av. Vallarta #900 Guadalajara / Jalisco</td>
+            <td>14m x 7m</td>
+            <td>324,500</td>
+            <td>C+</td>
+            <td>25 años</td>
+            <td>46%</td>
+            <td>45%</td>
+            <td><i class="flaticon-icon-128"></i></td>
+          </tr>
+          <tr>
+            <td><img src="assets/images/c5.png" alt=""></td>
+            <td>Centenario #568 Guadalajara / Jalisco</td>
+            <td>12m x 2.5m</td>
+            <td>290,000</td>
+            <td>A/B</td>
+            <td>30 años</td>
+            <td>58%</td>
+            <td>42%</td>
+            <td><i class="flaticon-icon-128"></i></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><a href="#"><i class="flaticon-arrow"></i>&nbspDescargar en PDF</a></p>
+      </ul>
+
+		
+
+	</main>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+			<ul class="col s6">
+				<li><a href="ubicacion.html">Ubicaciones</a></li>
+				<li>|</li> 
+				<li><a href="campanas.html">Mis Campañas</a></li>
+				<li>|</li> 
+				<li><a href="contacto.html">Contacto</a></li>
+				<li>|</li> 
+				<li><a href="privacidad.html">Política de Privacidad y Condiciones</a></li>
+			</ul>
+			<ul class="col s6">
+				<li><a href="mailto:info@msmedia.com.mx">info@msmedia.com.mx</a></li>
+				<li>•</li>
+				<li>Tels: (55) 3067-4103 y (55) 4606-1234</li>
+				<a href="#" target="_blank"><i class="flaticon-social"></i></a>&nbsp
+				<a href="#" target="_blank"><i class="flaticon-square"></i></a>
+			</ul>
+			</div>
+		</div>
+	</footer>	
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="assets/js/materialize.js"></script>
+      <script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html>
