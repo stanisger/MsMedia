@@ -23,7 +23,7 @@ i{
 }
 
 .section{
-	background-color:white;
+	background-color: #000 !important;
 }
 
 #fullpage{
@@ -33,164 +33,256 @@ i{
 
 
 footer{
-	background-color:black;
+	background-color: #222;
 	position: fixed;
     bottom: 0;
-    height: 60px;
+    height: 10%;
     width: 100%;
     z-index: 1004;
-    padding-top:20px;
+	.container{
+       width: 60%	;
+       left: 0;
+       right: 0;
+       margin: 0 auto;
+       bottom: 0;
+	   height: 30px;
+	   margin: auto;
+	   position: absolute; 
+	   top: 0;
+	   // background: red; 
+	   @include flexFlow;
+	   ul:nth-child(1){
+	   	font-size: 14px;
+	   	float: right; 
+	   	@include flexFlow;
+	   	width: 52%;
+	   	li{
+	   		color: #9a9a9a;
+	   		margin: 0 3px;
+	   		a{
+	   			color: #9a9a9a;
+	   			transition: .2s;
+	   			:hover{
+	   				color:  $red;
+	   			}
+	   		}
+	   	}
+	   }
+	   ul:nth-child(2){
+	   	float: left;
+	   	@include flexFlow;
+	   	width: 48%;
+	   	font-size: 14px;
+	   	li{
+	   		margin: 0 5px;
+	   		color: #9a9a9a;
+	   		float: right;
+	   		font-weight: lighter;
+	   		a{
+	   			color: white;
+	   			transition: .2s;
+	   			:hover{
+	   				color:  $red;
+	   			}
 
-	a{
+	   		}
+	   	}
+	   	a{
+	   		color: #9a9a9a;
+	   		float: right;
+	   		font-weight: lighter;
+	   		margin: 0 1px;
+	   		i{
+	   			vertical-align: middle;
+	   		}
+	   	}
+	  }
+	}
+	// a{
 
-		color:$lightgrey;
-		transition: color .3s;
+	// 	color:$lightgrey;
+	// 	transition: color .3s;
 	
-		&:hover{
-		color:$red !important;
-		}
+	// 	&:hover{
+	// 	color:$red !important;
+	// 	}
 
 
-	    i{
-			font-style: normal;
-			-webkit-font-smoothing: antialiased;
-			font-size: 20px;
-    		line-height: 15px;
-		}
-	}
+	
+	
 
 
-	ul{ 
-		@include cero;
+	// ul{ 
+	// 	@include cero;
 
-		li{
-			display: inline-block;
-			color: $lightgrey;
-			padding:0 10px;
+	// 	li{
+	// 		display: inline-block;
+	// 		color: $lightgrey;
+	// 		padding:0 10px;
 
-			a{
-				color:$lightgrey;
-				transition: color .3s;
+	// 		a{
+	// 			color:$lightgrey;
+	// 			transition: color .3s;
 			
-				&:hover{
-				color:$red !important;
-				}
+	// 			&:hover{
+	// 			color:$red !important;
+	// 			}
 
-			}
+	// 		}
 
-		}
-	}
+	// 	}
+	// }
 
 }
 
 
-
-
-.second-nav{
-	background-color:black;
-	height: 68px;
-	z-index:99;
-	position:relative;
-	.nav-wrapper {
-		
-			width: 60%;
-		.row{
-            i{
-            	@include cero;
-            }
-			div:nth-child(1) a{
-				color:red;
-				text-transform:uppercase;
-				font-family: 'Titillium Web', sans-serif;
-				font-weight: 700;
-				font-size: 18px;
-			
-			}
-		  	h2{
-		  		color:$red;
-				text-transform:uppercase;
-				font-family: 'Titillium Web', sans-serif;
-				font-weight: 700;
-				font-size: 22px;
-				line-height: 12px;
-				margin:  23px 0 0;
-				text-align: left;
-		  	}
-
-		  	.guardados{
-		  		text-align: right;
-		  		span:nth-child(1){
-		  			display: inline-block;
-		  			width: 30px;
-		  			vertical-align: middle;
-		  			color: $red;
-		  		}
-			  		a{
-						text-decoration: underline;
-			  		 }
-			  		span:nth-child(3){
-					padding: 0px 10px 0px 8px;
-			    	border-radius: 5px;
-					color:white;
-					background-color:$red;
-					margin-left: 10px;
-				}	
-	  		}
-	  	}
-	}		
-}
 
 header{
-	position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 70;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.first-nav{
-	height: 114.5px;
-	color:$grey;
-
-	a{
+	position:fixed;
+	height: 10%;
+	display:block;
+	width: 100%;
+	background: white;
+	z-index:9;
+	overflow: hidden;
+	.first-nav{
+		border:0;
+		height: 100%;
 		color:$grey;
-		width: 200px;
-		text-align: center;
-		text-transform: uppercase;
-		padding-top: 10px;
-	}
+		.nav-wrapper {
+			width: 60%;
+			position: relative;
+			
+				>img{
+					 
+					  bottom: 0;
+					  height: calc(3vw + 3vh);
+					  margin: auto;
+					  position: absolute; 
+					  top: 0;
+					  @media (min-height: 800px){
+                          height: calc(3.3vw + 3.3vh);
+					  }
 
-	.nav-wrapper {
-		i { 
-		height: 35px;
-   		text-align: center;
-    	line-height: 64px;
-		}
+				}
+			 
+			> ul{
+				display: inline-table;
+				height: 98%;
+				li{
+					background: transparent;
+					text-align: center;
+					color: #555;
+					padding: 0 18px;
+					cursor: pointer;
+					border-top: 4px solid transparent;
+					// padding-top: 0;
+					&:hover{
+						background: rgba( 0, 0,0, .77);
+						color: white;
+						border-top: 4px solid $red;
+					}
+					
+					
+						i{
+
+                          display: inline-block;
+                          font-size: 22px;
+                          height: 0;
+                          line-height: 0;
+                          vertical-align: sub;
+                          @media (min-height: 840px){
+                              display: block;
+                               line-height: 4rem;
+                               height: 29px;
+                               font-size: 29px;
+
+	                 
+                         }
+					}
+					 @media (min-height: 600px){
+                         padding-top: 1%;
+					 }
+					 @media (min-height: 720px){
+                         padding-top: 2%;
+					 }
+					 @media (min-height: 840px){
+					 	padding: 0 18px;
+					 }
+				
+				}
+			}
+		}		
 	}
-    .container{
-       width: 60%;
-     }		
+	// @media (min-height: 520px){
+		
+	// }
 }
+main.contenido{	
+	height: 80%;
+	.second-nav{
+		background-color:black;
+		height: 9%;
+		z-index:99;
+		width: 100%;
+		position:relative;
+		.nav-wrapper {
+			width: 60%;
+			position: relative;
+	           
+				div:nth-child(1){
+				
+				  	h2{
+				  		color:$red;
+						text-transform:uppercase;
+						font-family: 'Titillium Web', sans-serif;
+						font-weight: 700;
+						font-size: 22px;
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						height: 22px;
+						margin: auto 0;
+				  	}
+				}
 
-.brand-logo {
-	text-align:left !important;
-	img{
-		padding-top:10px;
+			  	.guardados{
+			  		position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					height: 60px;
+					margin: auto 0;
+			  		text-align: right;
+			  		span:nth-child(1){
+			  			display: inline-block;
+			  			width: 30px;
+			  			vertical-align: middle;
+			  			color: $red;
+			  		}
+				  		a{
+							text-decoration: underline;
+				  		 }
+				  		span:nth-child(3){
+						padding: 0px 10px 0px 8px;
+				    	border-radius: 5px;
+						color:white;
+						background-color:$red;
+						margin-left: 10px;
+					}	
+		  		}
+		  	
+		}		
 	}
-}
-.contenido{
-	@include flexFlow ;
-	 height: 100%;
 
-	> ul{
+	article{
 		@include cero;
-		margin: 178px 0 0 ;
+		@include flexFlow ;
 		position: relative;
-	}
+		height: 91%;
+	
 	// nth-child1
-	ul:nth-child(1){
+	aside:nth-child(1){
 		width: 20%;
 		background-color: $greyLight; 
         ul.collapsible{
@@ -200,25 +292,29 @@ header{
         	width: 100%;
         	li:nth-child(2){
         		.collapsible-header{
-        			border-top: 1px solid white;
+        			border-top: 1px solid rgba( 255,255,255, .1);
         		}
         	}
         	li:nth-child(1){
+
         		.collapsible-body{
-                   height: 55vh;
+                   height: 54vh;
         		}
         	}
         	li{
+        		width: 100%;
         		.collapsible-header{
-        			background: transparent ;
+        			background-size: 40px; 
+        			background: url(assets/images/iconMore.png) no-repeat 97% center  ;
         			color: white;
         			padding: 18px 0;
         			border:0;
-        			h4{
+        			.content-collapsible-header{
+        				padding: 0  18px;
         				font-size: 14px;
-        				margin-left: 18px;
-        			}
+	        	    }		
         		}
+        		
         		
 	        	.collapsible-body{
 	        		border: 0;
@@ -237,12 +333,19 @@ header{
         				}
 	        		}
 	        	}
+	        }
+	        li.active{
+	        	.collapsible-header{
+	        		 background: none !important;
+	        		 cursor: default;
+	        	}
 	        }	
+
         }
 
 	}
 	// nth-child2
-	ul:nth-child(2){
+	aside:nth-child(2){
 		width: 80%;
 		background-color: white;
 		position: relative;
@@ -259,6 +362,7 @@ header{
 		// 	bottom:0px;
 		// }
 	}
+  }
 }
 
 .contenido-contacto{

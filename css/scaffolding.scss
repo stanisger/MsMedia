@@ -1,0 +1,46 @@
+
+
+/*
+  When creating your CSS selector,
+  change "brown" to something of your choosing
+  */
+  .waves-effect.waves-black .waves-ripple {
+   /* The alpha value allows the text and background color
+   of the button to still show through. */
+    background-color: rgba(0, 0, 0, 1);
+  }
+        
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #db1917;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f81e37;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: #bc1436;
+  }
+  ::-webkit-scrollbar-track {
+    background: #130024;
+    border: 8px none #ffffff;
+    border-radius: 19px;
+  }
+  ::-webkit-scrollbar-track:hover {
+    background: #1c1c1c;
+  }
+  ::-webkit-scrollbar-track:active {
+    background: #333333;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+

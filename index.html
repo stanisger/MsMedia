@@ -9,7 +9,6 @@
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700,600italic,600,700italic,900,400italic' rel='stylesheet' type='text/css'>
-
 	<link rel="stylesheet" type="text/css" href="style.css" />
 
 	<!--[if IE]>
@@ -18,170 +17,139 @@
 		</script>
 	<![endif]-->
 
-</head>
+</head>	
 <body>
-<header>
-	<nav class="first-nav">
-		<div class="nav-wrapper container">
-		  <a href="#" class="brand-logo">
-			<img src="assets/images/logo.png" alt="ms media">
-		  </a>
-		  <ul id="" class="right hide-on-med-and-down">
-				<li data-menuanchor="firstPage"><a href="#firstPage"><i class="material-icons">location_on</i>
-				            Ubicaciones</a></li>
-				<li data-menuanchor="secondPage"><a href="#secondPage"><i class="material-icons">view_list</i>
-				            MÁS CAMPAÑAS</a></li>
-				<li data-menuanchor="3rdPage"><a href="#3rdPage"><i class="material-icons">send</i>
-				            CONTACTO</a></li>
-		   </ul>
-		</div>
-	</nav>
-    
-    <nav class="second-nav">
-	    <div class="nav-wrapper container">
-		    <div class="row">	
-			      <div class="col s9">
+	<header>
+		<nav class="first-nav">
+			<div class="nav-wrapper container">
+				<img src="assets/images/logo.png" alt="ms media"> 
+			  <ul id="menu" class="right hide-on-med-and-down">
+			      <a href="#firstPage" class="active">
+					<li data-menuanchor="firstPage" class="waves-effect  waves-light">
+					  <i class="material-icons">location_on</i>
+					   <span> UBICACIONES</span>
+					</li>
+				   </a>	
+				   <a href="#secondPage">
+					<li data-menuanchor="secondPage" class="waves-effect  waves-light">
+					  <i class="material-icons">view_list</i>
+					   <span>  MÁS CAMPAÑAS</span>
+					</li>
+				   </a>	
+				   <a href="#3rdPage">
+					<li data-menuanchor="3rdPage" class="waves-effect  waves-light">
+					  <i class="material-icons">send</i>
+					   <span> CONTACTO</span>
+					</li>
+				   </a>	   
+			   </ul>
+			</div>
+		</nav>
+	</header>
+
+	<!-- ** FULLPAGE///-->
+	<div id="fullpage">
+	      <!-- ///////////* Page1 * /////////////////-->	
+		  <div class="section" id="section0">
+			<main class="contenido"> 
+			  <nav class="second-nav">
+			    <div class="nav-wrapper container">
+			      <div >
 			        <h2>Mapa de ubicaciones</h2>
 			      </div>
-			      <div class="col s3 guardados">
+			      <div class=" guardados">
 			          <span class="material-icons">star_rate</span>
 			          <a href="#" class="collection-item">
 			           Guardados</a><span>1</span>
-			      </div>
-		    </div>
+			      </div> 
+				</div>
+			  </nav>  
+			  <article>
+				  <aside>
+					  <ul class="collapsible" data-collapsible="accordion">
+					    <li>
+					      <div class="collapsible-header active">
+						      <div class="content-collapsible-header">
+			                    UBICACIÓN & NSE 
+			                  </div>  
+					      </div>
+					      <div class="collapsible-body">
+					         <select>
+						      	<option value="" disabled selected>Estado</option>
+						      	<option value="1">Aguascalientes</option>
+						      	<option value="2">Colíma</option>
+						    </select>
+						      <select>
+						      	<option value="" disabled selected>Ciudad</option>
+						      	<option value="1">Aguascalientes</option>
+						      	<option value="2">Colíma</option>
+						    </select>
+						    <select>
+						      	<option value="" disabled selected>Municipio</option>
+						      	<option value="1">Aguascalientes</option>
+						      	<option value="2">Colíma</option>
+						    </select>
+						    <select>	
+						      	<option value="" disabled selected>NSE</option>
+						      	<option value="1">Aguascalientes</option>
+						      	<option value="2">Colíma</option>
+						    </select>
+					       </div>
+					    </li>
+					    <li>
+					      <div class="collapsible-header waves-effect waves-light">
+					        <div class="content-collapsible-header">
+					          ESTABLECIMIENTOS CERCANOS 
+					        </div>  
+					      </div>
+					      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+					    </li>
+					  </ul>
+			      </aside>
+		      
+			      <aside class="mapa">
+			 	    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15002084.337996349!2d-111.55596176394198!3d23.365841313308945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84043a3b88685353%3A0xed64b4be6b099811!2zTcOpeGljbw!5e0!3m2!1ses-419!2smx!4v1460656400638"frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe>
+			 	   </aside>
+		     </article>
+		   </main>
 		</div>
-	</nav>  
-</header>
+		<!-- ///////////* Page1 Ends* /////////////////-->	
 
-<!-- ** FULLPAGE///-->
-<div id="fullpage">
-      <!-- ///////////* Page1 * /////////////////-->	
-	  <div class="section" id="section0">
-		<main class="contenido">
-		  <ul>
-			<!-- <h3>UBICACIÓN Y NSE</h3>
-			 <li class="input-field col s12">
-			    <select>
-			      <option value="" disabled selected>Estado</option>
-			      <option value="1">Aguascalientes</option>
-			      <option value="2">Colíma</option>
-			    </select>
-			  </li>
-			  <li class="input-field col s12">
-			    <select>
-			      <option value="" disabled selected>Ciudad</option>
-			      <option value="1">Aguascalientes</option>
-			    </select>
-			  </li>
-			  <li class="input-field col s12">
-			    <select>
-			      <option value="" disabled selected>Municipio</option>
-			      <option value="1">CDMX</option>
-			    </select>
-			  </li>
-			  <li class="input-field col s12">
-			    <select>
-			      <option value="" disabled selected>NSE</option>
-			      <option value="1">CDMX</option>
-			    </select>
-			  </li> -->
-			  <!-- BTN BUTTOM -->
-			  <ul class="collapsible" data-collapsible="accordion">
-			    <li>
-			      <div class="collapsible-header active">
-                    <h4>UBICACIÓN & NSE</h4>
-			      </div>
-			      <div class="collapsible-body">
-			         <select>
-				      	<option value="" disabled selected>Estado</option>
-				      	<option value="1">Aguascalientes</option>
-				      	<option value="2">Colíma</option>
-				    </select>
-				      <select>
-				      	<option value="" disabled selected>Ciudad</option>
-				      	<option value="1">Aguascalientes</option>
-				      	<option value="2">Colíma</option>
-				    </select>
-				    <select>
-				      	<option value="" disabled selected>Municipio</option>
-				      	<option value="1">Aguascalientes</option>
-				      	<option value="2">Colíma</option>
-				    </select>
-				    <select>	
-				      	<option value="" disabled selected>NSE</option>
-				      	<option value="1">Aguascalientes</option>
-				      	<option value="2">Colíma</option>
-				    </select>
-			       </div>
-			    </li>
-
-			    <li>
-			      <div class="collapsible-header">
-			      	<h4>ESTABLECIMIENTOS CERCANOS</h4>
-			      </div>
-			      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-			    </li>
-			  </ul>
-	      </ul>
-	      
-	      <ul class="mapa">
-	 	    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15002084.337996349!2d-111.55596176394198!3d23.365841313308945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84043a3b88685353%3A0xed64b4be6b099811!2zTcOpeGljbw!5e0!3m2!1ses-419!2smx!4v1460656400638"frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe>
-	      </ul>
-		</main>
+	    <!-- ///////////* Page2 * /////////////////-->		
+		<div class="section" id="section1"> </div>
+		<!-- ///////////* Page2 Ends* /////////////////-->	
+			
+		<!-- ///////////* Page2 * /////////////////-->	
+		<div class="section" id="section2"></div>
+		<!-- ///////////* Page2 Ends* /////////////////-->	
 	</div>
-	<!-- ///////////* Page1 Ends* /////////////////-->	
-
-    <!-- ///////////* Page2 * /////////////////-->		
-	<div class="section" id="section1"> </div>
-	<!-- ///////////* Page2 Ends* /////////////////-->	
-		
-	<!-- ///////////* Page2 * /////////////////-->	
-	<div class="section" id="section2"></div>
-	<!-- ///////////* Page2 Ends* /////////////////-->	
-</div>
-<!-- ** FULLPAGE ENDS///-->
+	<!-- ** FULLPAGE ENDS///-->
 
 <footer>
-		<div class="container">
-			<div class="row">
-			<ul class="col s6">
-				<li><a href="ubicacion.html">Ubicaciones</a></li>
-				<li>|</li> 
-				<li><a href="campanas.html">Mis Campañas</a></li>
-				<li>|</li> 
-				<li><a href="contacto.html">Contacto</a></li>
-				<li>|</li> 
-				<li><a href="privacidad.html">Política de Privacidad y Condiciones</a></li>
-			</ul>
-			<ul class="col s6">
-				<li><a href="mailto:info@msmedia.com.mx">info@msmedia.com.mx</a></li>
-				<li>•</li>
-				<li>Tels: (55) 3067-4103 y (55) 4606-1234</li>
-				<a href="#" target="_blank"><i class="flaticon-social"></i></a>&nbsp
-				<a href="#" target="_blank"><i class="flaticon-square"></i></a>
-			</ul>
-			</div>
-		</div>
-	</footer>
-
-
+	<div class="container">
+		<ul>
+			<li><a href="ubicacion.html">Ubicaciones</a></li>
+			<li>|</li> 
+			<li><a href="campanas.html">Mis Campañas</a></li>
+			<li>|</li> 
+			<li><a href="contacto.html">Contacto</a></li>
+			<li>|</li> 
+			<li><a href="privacidad.html">Política de Privacidad y Condiciones</a></li>
+		</ul>
+		<ul >
+			<li><a href="mailto:info@msmedia.com.mx">info@msmedia.com.mx</a></li>
+			<li>•</li>
+			<li>Tels: (55) 3067-4103 y (55) 4606-1234</li>
+			<a href="#" target="_blank"><i class="flaticon-social"></i></a>&nbsp
+			<a href="#" target="_blank"><i class="flaticon-square"></i></a>
+		</ul>
+	</div>
+</footer>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="assets/js/materialize.js"></script>
-      <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/materialize.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="assets/js/examples.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-				menu: '#menu',
-				scrollingSpeed: 1000
-			});
-
-		});
-	</script>
-
 </body>
 </html>
 

@@ -1,13 +1,20 @@
 
 $(document).ready(function() {
-
+    // seletor materialize
     $('select').material_select();
 
-    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    // modal materialize
     $('.modal-trigger').leanModal();
+    $('#modal1').closeModal();
 
-     $('#modal1').closeModal();
-  });
+ 	// fullpage
+	$('#fullpage').fullpage({
+		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+		menu: '#menu',
+		scrollingSpeed: 750
+	});
+
+});
 
 
 
